@@ -1,0 +1,24 @@
+{
+  "originHash" : "1467e4f10fe16b90e0ca51d65579a6cb8077edc1672dad7a14ba063f95e52ac6",
+  "pins" : [
+    {
+      "identity" : "swift-tagged",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-tagged",
+      "state" : {
+        "revision" : "3907a9438f5b57d317001dc99f3f11b46882272b",
+        "version" : "0.10.0"
+      }
+    },
+    {
+      "identity" : "swift-uuidv7",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mhayes853/swift-uuidv7",
+      "state" : {
+        "revision" : "779a1d6387de8b35f8fe71a686c8c85154ab8abf",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AA17E7502E680AB700E53BA5 /* UUIDV7 in Frameworks */ = {isa = PBXBuildFile; productRef = AA17E74F2E680AB700E53BA5 /* UUIDV7 */; };
+		AA17E7522E680ADF00E53BA5 /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = AA17E7512E680ADF00E53BA5 /* Tagged */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AACB75582E60F7E900A82355 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -45,6 +50,26 @@
 			path = "fitness-health-insight-generatorUITests";
 			sourceTree = "<group>";
 		};
+		AACB75742E61016200A82355 /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AACB75972E66935200A82355 /* Permissions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		AACB759B2E66938500A82355 /* Queries */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		AACB75A42E6800BA00A82355 /* Notifications */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA17E7522E680ADF00E53BA5 /* Tagged in Frameworks */,
+				AA17E7502E680AB700E53BA5 /* UUIDV7 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +102,10 @@
 		AACB753E2E60F7E800A82355 = {
 			isa = PBXGroup;
 			children = (
+				AACB75A42E6800BA00A82355 /* Notifications */,
+				AACB759B2E66938500A82355 /* Queries */,
+				AACB75972E66935200A82355 /* Permissions */,
+				AACB75742E61016200A82355 /* Data */,
 				AACB75492E60F7E800A82355 /* fitness-health-insight-generator */,
 				AACB755A2E60F7E900A82355 /* fitness-health-insight-generatorTests */,
 				AACB75642E60F7E900A82355 /* fitness-health-insight-generatorUITests */,
@@ -109,9 +140,15 @@
 			);
 			fileSystemSynchronizedGroups = (
 				AACB75492E60F7E800A82355 /* fitness-health-insight-generator */,
+				AACB75742E61016200A82355 /* Data */,
+				AACB75972E66935200A82355 /* Permissions */,
+				AACB759B2E66938500A82355 /* Queries */,
+				AACB75A42E6800BA00A82355 /* Notifications */,
 			);
 			name = "fitness-health-insight-generator";
 			packageProductDependencies = (
+				AA17E74F2E680AB700E53BA5 /* UUIDV7 */,
+				AA17E7512E680ADF00E53BA5 /* Tagged */,
 			);
 			productName = "fitness-health-insight-generator";
 			productReference = AACB75472E60F7E800A82355 /* fitness-health-insight-generator.app */;
@@ -195,6 +232,10 @@
 			);
 			mainGroup = AACB753E2E60F7E800A82355;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AACB75B12E6801CF00A82355 /* XCRemoteSwiftPackageReference "swift-tagged" */,
+				AACB75B22E68021E00A82355 /* XCRemoteSwiftPackageReference "swift-uuidv7" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AACB75482E60F7E800A82355 /* Products */;
 			projectDirPath = "";
@@ -393,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "fitness-health-insight-generator/fitness-health-insight-generator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fitness-health-insight-generator/Preview Content\"";
@@ -422,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "fitness-health-insight-generator/fitness-health-insight-generator.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"fitness-health-insight-generator/Preview Content\"";
@@ -558,6 +601,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AACB75B12E6801CF00A82355 /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+		AACB75B22E68021E00A82355 /* XCRemoteSwiftPackageReference "swift-uuidv7" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mhayes853/swift-uuidv7";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA17E74F2E680AB700E53BA5 /* UUIDV7 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AACB75B22E68021E00A82355 /* XCRemoteSwiftPackageReference "swift-uuidv7" */;
+			productName = UUIDV7;
+		};
+		AA17E7512E680ADF00E53BA5 /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AACB75B12E6801CF00A82355 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AACB753F2E60F7E800A82355 /* Project object */;
 }

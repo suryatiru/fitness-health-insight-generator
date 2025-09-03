@@ -1,10 +1,3 @@
-//
-//  fitness_health_insight_generatorUITestsLaunchTests.swift
-//  fitness-health-insight-generatorUITests
-//
-//  Created by Surya Tirumalasetty on 8/28/25.
-//
-
 import XCTest
 
 final class fitness_health_insight_generatorUITestsLaunchTests: XCTestCase {
