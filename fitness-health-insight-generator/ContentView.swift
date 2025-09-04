@@ -13,10 +13,10 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            if let reading = latestWorkout {
+            if latestWorkout != nil {
                             VStack(alignment: .leading, spacing: 8) {
                                 Text("Last Workout").font(.headline)
-                                Text("Type: \(latestWorkout?.workoutActivityType)")
+                                Text("Type: \(String(describing: latestWorkout?.workoutActivityType))")
                                 Text("Duration: \((latestWorkout?.duration ?? 0) / 60, specifier: "%.1f") min")
                             }
                             .padding()
